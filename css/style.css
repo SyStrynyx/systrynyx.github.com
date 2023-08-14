@@ -185,7 +185,7 @@ header span{
     height: 80vh;
     justify-content: space-around;
     justify-items: center;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 .label_box{
     width: 80%;
@@ -198,7 +198,7 @@ header span{
     align-items: center;
     /* color: var(--text-color); */
     /* font-size: 2rem; */
-
+    /* position: sticky; */
 }
 .label_box{
     display: flex;
@@ -267,5 +267,62 @@ header span{
     height: 85vh;
     border: 2px solid green;
     margin: 1vw;
+}
+.main_body{
+    width: 80%;
+    height: fit-content;
+    /* border: 2px solid yellow; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7vh;
+    margin-right: 1%;
+    /* padding-top: 10vh; */
+    padding-left: 5%;
+}
+.main_body article{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    /* letter-spacing: 0.05ch; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+    box-sizing: border-box;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
+}
+.main_body h1{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    letter-spacing: 0.1ch;
+    font-family: 'Poppins', sans-serif; 
+}
+.main_body img{
+    width: 50%;
+    height: 50vh;
+    object-fit: cover;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    float: left;
+}
+#v1{
+    width: 50%;
+    height: auto;
+    /* margin-top: -1%; */
+}
+#v2{
+    width: 50%;
+    height: 50vh;
+}
+.oval{
+    width: 200px;
+    height: 200px;
+    border: 2px solid yellow;
+    /* box-sizing: border-box; */
+    background-color:red;
+    border-radius: 50%;
+    float: left;
+    /* shape-outside: square(100%); */
 }
 /* Input below are the code for the mobile version of the webpage */
