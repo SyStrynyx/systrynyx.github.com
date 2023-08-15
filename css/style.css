@@ -146,11 +146,6 @@ header{
 header i{
     font-size: 3em;
 }
-header i:hover{
-    transform: scale(1.2);
-    transition: all 0.5s ease-in-out;
-    color: var(--text-color);
-}
 header a{
     font-size: 1rem;
     color: var(--text-color);
@@ -173,6 +168,12 @@ header span{
 header span:hover{
     color: var(--primary-color);
     transition: all 0.3s ease-in-out;
+}
+header a:hover i{
+    color: var(--text-color);
+    transition: all 0.2s ease-in-out;
+    scale: 1.3;
+    margin-right: 10px;
 }
 .navbar{
     display: flex;
