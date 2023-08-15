@@ -60,6 +60,12 @@ body{
     padding: 20%;
     border-radius: 20%;
 }
+.icon_box:hover i{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    background:var(--sub-background);
+    color: var(--text-color);
+}
 .icon4{
     font-size: 5px;
 }
@@ -140,6 +146,11 @@ header{
 header i{
     font-size: 3em;
 }
+header i:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    color: var(--text-color);
+}
 header a{
     font-size: 1rem;
     color: var(--text-color);
@@ -150,13 +161,18 @@ header a{
     justify-self: left;
     justify-content: space-around;
     align-items: center;
+    margin-left: 10px;
 }
 header span{
     font-family: var(--text-font);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     text-align: center;
     /* margin-top: 10%; */
+}
+header span:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
 }
 .navbar{
     display: flex;
@@ -173,12 +189,16 @@ header span{
     font-size: 1.2rem;
 }
 .navbar a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* margin-left: 10px; */
     text-decoration: none;
     color: var(--text-color);
     font-family: var(--text-font);
     display: flex;
+}
+.navbar a:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
 }
 .navbar input{
     width: 30%;
