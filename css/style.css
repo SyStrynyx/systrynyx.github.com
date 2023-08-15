@@ -368,13 +368,20 @@ navbar a{
     letter-spacing: 0.1ch;
     font-family: var(--text-font); 
 }
+.main_body h2{
+    font-size: 0.5rem;
+    color: var(--text-color);
+    letter-spacing: 0ch;
+    font-family: var(--text-font);
+}
 .main_body img{
     width: 50%;
-    height: 50vh;
+    height: auto;
     object-fit: cover;
     padding-right: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
     float: left;
+    border-radius: 20px;
 }
 #v1{
     width: 50%;
@@ -382,8 +389,8 @@ navbar a{
     /* margin-top: -1%; */
 }
 #v2{
-    width: 50%;
-    height: 50vh;
+    width: 40%;
+    height: auto;
 }
 .oval{
     width: 200px;
