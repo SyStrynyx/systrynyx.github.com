@@ -452,6 +452,14 @@ navbar a{
     float: left;
     border-radius: 20px;
 }
+.main_body i{
+    font-size: 15rem;
+    color: var(--secondary-color);
+    float: left;    
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
 #v1{
     width: 50%;
     height: auto;
@@ -472,3 +480,101 @@ navbar a{
     /* shape-outside: square(100%); */
 }
 /* Input below are the code for the mobile version of the webpage */
+@media screen and (max-width: 800px){
+    .landing_container{
+        display: grid;
+        grid-template-columns: 100fr;
+        grid-template-rows: 10% 80fr;
+        row-gap: 10px;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: none;
+        padding-top: 5%;
+    }
+    .navbar input{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .main_gallery_container{
+        display: none;
+    }
+    .navigation{    
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 20vh);
+        column-gap: 10px;
+        justify-self: center;
+        align-self: center;
+        /* justify-items: center; */
+        margin-top: 10%;
+    }
+    .icon_box i{
+        padding: 20%;
+        justify-items: center;
+        margin-left: 7%;
+        /* margin:  auto auto; */
+    }
+    .icon1{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .icon2{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .icon3{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .icon4{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    header{
+        display: flex;
+        margin-top: 5vh;
+        padding-bottom: 5%;
+        position: sticky;
+    }
+    .label_panel{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 50vh;
+        justify-items: center;
+        margin-left: 2%;
+        position: fixed;
+    }
+    .label_box{
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 20%;
+    }
+    ._container_text{
+        margin-left: 12%;
+    }
+    .featured_box span{
+        font-size: 2rem;
+    }
+    .main_body{
+        width: 80%;
+        height: fit-content;
+        margin-left: 10%;
+        padding-bottom: 20%;
+    }
+    .main_body article{
+        height: max-content;
+    }
+    .main_body i{
+        position: relative;
+        justify-content: center;
+    }
+@media screen and (max-width: 1000px) {
+}
+}
