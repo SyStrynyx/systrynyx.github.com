@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/js/script.js"></script>
     <title>Project_Systria</title>
 </head>
 <body>
@@ -24,11 +25,11 @@
             <input type="text"><i class='bx bx-search-alt'></i></input>
         </div>
         <div class="toggle" id="menu-icon">
-            <i class='bx bx-menu-alt-right'></i>   
+            <button onclick="openNav()"><i class='bx bx-menu-alt-right'></i></button>
         </div>
     </header>
     <div class="featured_container">
-        <div class="label_panel">
+        <div class="label_panel" id="label_panel">
             <a href="/index.html">
                 <div class="label_box"><span><i class='bx bx-home-alt-2'></i></span></div>
             </a>

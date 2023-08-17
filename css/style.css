@@ -541,40 +541,53 @@ navbar a{
         padding-bottom: 5%;
         position: sticky;
     }
+    .landing_container{
+        padding-top: 20vh;
+    }
     .label_panel{
         /* background-color: blue; */
-        display: flex;
-        flex-direction: column;
-        width: 20%;
-        height: 50vh;
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        height: 10vh;
+        /* margin-left: -3%; */
+        position: absolute;
+        justify-content: center;
         justify-items: center;
-        margin-left: 2%;
-        position: fixed;
+        align-items: center;
     }
     .label_box{
-        width: auto;
-        margin: 0 auto;
-        margin-bottom: 20%;
-    }
-    ._container_text{
-        margin-left: 12%;
+        padding: 2vh 5vw;
+        /* margin: 10%; */
     }
     .featured_box span{
         font-size: 2rem;
     }
     .main_body{
-        width: 80%;
+        width: 90%;
         height: fit-content;
-        margin-left: 10%;
+        margin-left: -10%;
         padding-bottom: 20%;
     }
     .main_body article{
-        height: max-content;
+        text-align: center;
     }
     .main_body i{
-        position: relative;
-        justify-content: center;
+        margin: 0 auto;
+        padding: 0vw 15vw;
     }
-@media screen and (max-width: 1000px) {
+    .main_body img{
+        width: 100%;
+        height: fit-content;
+    }
+    .main_body h1{
+        text-align: center;
+    }
 }
+@media screen and (max-width: 1000px) {
+    .navigation{
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
 }
