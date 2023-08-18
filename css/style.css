@@ -638,3 +638,7 @@ navbar a{
     .header a{
         margin: 10%;
     }
+    .main_body i{
+        width: 70%;
+    }
+}
