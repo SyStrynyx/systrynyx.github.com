@@ -632,8 +632,9 @@ navbar a{
         /* margin: 10%; */
     }
     .main_body{
-        width: 100%;
+        width: 95%;
         padding-top: 5%;
+        margin-left: -12.5%;
     }
     .header{
         position: fixed;
