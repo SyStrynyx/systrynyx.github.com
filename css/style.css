@@ -188,6 +188,7 @@ header a:hover i{
     color: var(--text-color);
     font-family: var(--text-font);
     font-size: 1.2rem;
+    z-index: 3;
 }
 .navbar a{
     font-size: 1rem;
@@ -589,7 +590,8 @@ navbar a{
     }
     .main_body i{
         margin: 0 auto;
-        padding: 0vw 15vw;
+        /* width: 80vw; */
+        padding: 0vw 16vw;
     }
     .main_body img{
         width: 100%;
