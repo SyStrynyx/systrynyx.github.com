@@ -296,6 +296,9 @@ navbar a{
     /* font-size: 2rem; */
     /* position: sticky; */
 }
+.label_box i{
+    padding: 30%;
+}
 .label_box:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
@@ -571,6 +574,9 @@ navbar a{
     } */
     .featured_box span{
         font-size: 3rem;
+    }
+    .label_box i{
+        padding: 0;
     }
     .main_body{
         width: 95%;
