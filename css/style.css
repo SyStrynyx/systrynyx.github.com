@@ -449,14 +449,35 @@ navbar a{
     letter-spacing: 0ch;
     font-family: var(--text-font);
 }
+.main_body i:hover{
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+    scale: 1.2;
+    padding: 5%;
+}
 .main_body img{
-    width: 50%;
-    height: auto;
+    width: 40%;
+    height: 40vh;
     object-fit: cover;
     padding-right: 3%;
     padding-bottom: 1%;
     float: left;
     border-radius: 20px;
+    /* border-radius: 10px; */
+}
+.main_body img:hover{
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
+}
+.main_body img:active{
+    width: 40%;
+    height: 100%;
+    padding-top: 5%;
+    /* border-radius: 10px; */
+}
+#right{
+    float: right;
+    padding-left: 3%;
 }
 .main_body i{
     font-size: 15rem;
@@ -566,7 +587,7 @@ navbar a{
         /* align-items: center; */
         /* justify-self: center; */
         /* text-align: center; */
-        z-index: -1;
+        /* z-index: 1;    */
         /* margin-left: 1.5%; */
     }
     /* .label_box{
@@ -595,7 +616,11 @@ navbar a{
     }
     .main_body img{
         width: 100%;
-        height: fit-content;
+        height: 30vh;
+        box-sizing: border-box;
+        object-fit: cover;
+        margin-left: 1.6%;
+        
     }
     .main_body h1{
         text-align: center;
