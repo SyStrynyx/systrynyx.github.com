@@ -444,10 +444,11 @@ navbar a{
     font-family: var(--text-font); 
 }
 .main_body h2{
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     color: var(--text-color);
-    letter-spacing: 0ch;
+    letter-spacing: 0.1ch;
     font-family: var(--text-font);
+    text-indent: 10%;
 }
 .main_body i:hover{
     color: var(--text-color);
@@ -505,6 +506,13 @@ navbar a{
     border-radius: 50%;
     float: left;
     /* shape-outside: square(100%); */
+}
+.main_body h3{
+    font-size: 0.5rem;
+    color: var(--text-color);
+    letter-spacing: 0.1ch;
+    font-family: var(--text-font);
+    /* text-align: center; */
 }
 /* Input below are the code for the mobile version of the webpage */
 @media screen and (max-width: 900px){
@@ -612,7 +620,7 @@ navbar a{
     .main_body i{
         margin: 0 auto;
         /* width: 80vw; */
-        padding: 0vw 16vw;
+        padding: 0vw 17vw;
     }
     .main_body img{
         width: 100%;
