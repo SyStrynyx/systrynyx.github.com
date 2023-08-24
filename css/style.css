@@ -8,7 +8,7 @@
     --secondary-color: #00e0d5;
     --hover-color: rgba(51, 151, 138, 0.822);
     --sub-background: rgba(73, 104, 100, 0.822);
-    --text-font: 'Poppins', sans-serif;
+    --text-font: 'Poppins', Geneva, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background: var(--background-color);
