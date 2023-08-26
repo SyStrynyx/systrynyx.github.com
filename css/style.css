@@ -293,6 +293,7 @@ navbar a{
     justify-items: center;
     align-items: center;
     text-align: center;
+    margin-left: 1em;
     /* color: var(--text-color); */
     /* font-size: 2rem; */
     /* position: sticky; */
@@ -514,6 +515,15 @@ navbar a{
     font-family: var(--text-font);
     /* text-align: center; */
 }
+#easter_egg{
+    font-size: 3em;
+    padding: 0;
+    margin-left: 0.5em;
+    padding-right: 1.1em;
+}
+#easter_egg_i{
+    font-size: 4em;
+}
 /* Input below are the code for the mobile version of the webpage */
 @media screen and (max-width: 900px){
     .landing_container{
@@ -590,6 +600,7 @@ navbar a{
         height: 50vh; */
         margin-left: -2%;
         position: absolute;
+        /* margin: 0.5em; */
         /* justify-content: center; */
         /* justify-items: center; */
         /* align-items: center; */
@@ -598,10 +609,9 @@ navbar a{
         /* z-index: 1;    */
         /* margin-left: 1.5%; */
     }
-    /* .label_box{
-        padding: 5vh 4vw;
-        margin: auto auto;
-    } */
+    .label_box{
+        margin-left: -1%;
+    }
     .featured_box span{
         font-size: 3rem;
     }
