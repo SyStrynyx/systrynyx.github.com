@@ -437,6 +437,15 @@ navbar a{
     margin-top: 0.8rem;
     font-weight: bold;
 }
+.main_body article span{
+    font-size: 2rem;
+    font-style: italic;
+    /* color: var(--background-color); */
+    /* color: redk; */
+}
+.main_body hide{
+    color: var(--background-color);
+}
 .main_body h1{
     font-size: 2.5rem;
     color: var(--text-color);
