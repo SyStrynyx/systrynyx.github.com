@@ -454,11 +454,36 @@ navbar a{
     font-family: var(--text-font); 
 }
 .main_body h2{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    letter-spacing: 0.1ch;
+    font-family: var(--text-font);
+    /* text-indent: 10%; */
+}
+.main_body h4{
     font-size: 1.5rem;
     color: var(--text-color);
     letter-spacing: 0.1ch;
     font-family: var(--text-font);
-    text-indent: 10%;
+}
+.main_body bold{
+    font-weight: bold;
+}
+.main_body code{
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    border: var(--secondary-color) dotted 5pt;
+    background-color: var(--sub-background);
+    width: 80%;
+    height: fit-content;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%; 
+    margin: 0 auto; 
+    margin-bottom: 3%;
 }
 .main_body i:hover{
     color: var(--text-color);
