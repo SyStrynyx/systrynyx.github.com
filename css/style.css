@@ -458,6 +458,7 @@ navbar a{
     color: var(--text-color);
     letter-spacing: 0.1ch;
     font-family: var(--text-font);
+    text-align: center;
     /* text-indent: 10%; */
 }
 .main_body h4{
@@ -472,7 +473,7 @@ navbar a{
 .main_body code{
     font-style: italic;
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     border: var(--secondary-color) dotted 5pt;
     background-color: var(--sub-background);
     width: 80%;
@@ -481,9 +482,24 @@ navbar a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2%; 
-    margin: 0 auto; 
-    margin-bottom: 3%;
+    margin: 2% auto; 
+    border-radius: 10px;
+}
+.main_body tab{
+    content: "  ";
+}
+.main_body math{
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    background-color: var(--sub-background);
+    display: block;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: fit-content;
+    margin: 2% auto;
 }
 .main_body i:hover{
     color: var(--text-color);
@@ -492,21 +508,27 @@ navbar a{
     padding: 5%;
 }
 .main_body img{
-    width: 40%;
-    height: 40vh;
+    width: 60%;
+    /* height: 50vh; */
     object-fit: cover;
     padding-right: 3%;
     padding-bottom: 1%;
+    padding-left: 2%;
     float: left;
     border-radius: 20px;
     /* border-radius: 10px; */
+}
+.main_body ul{
+    text-indent: 5ch;
+    list-style: none;
+    font-size: 1.3rem;
 }
 .main_body img:hover{
     scale: 1.1;
     transition: all 0.5s ease-in-out;
 }
 .main_body img:active{
-    width: 40%;
+    /* width: 40%; */
     height: 100%;
     padding-top: 5%;
     /* border-radius: 10px; */
@@ -663,15 +685,13 @@ navbar a{
     }
     .main_body i{
         margin: 0 auto;
-        /* width: 80vw; */
-        padding: 0vw 17vw;
     }
     .main_body img{
         width: 100%;
-        height: 30vh;
-        box-sizing: border-box;
-        object-fit: cover;
-        margin-left: 1.6%;
+        /* height: 30vh; */
+        /* box-sizing: border-box; */
+        /* object-fit: cover; */
+        /* margin-left: 1.6%; */
         
     }
     .main_body h1{

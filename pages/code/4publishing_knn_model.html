@@ -46,11 +46,11 @@
     <div class="main_body">
         <h1>Representing Paths to Parks using K-Nearest Neighbor</h1>
         <h2> Billena, Dhominick John S. and Artacho, Cristopher Ian</h2>
-        <h4> Introduction </h4>
+        <h2> Introduction </h2>
         <article><i class='bx bxl-graphql bx-spin-hover' ></i>
         <bold>Have you ever wondered how your brain seems to reason out the path that you
 need to take in order to reach a place?</bold>
-        </article> <br>
+        </article> <br> <br> <br>
         <article> Is it by using landmarks as to instruct you as to where you should meet? Is it by using
 a map to know the nearest location of that landmark?
 We are inclined to use the nearest neighboring places in order to reach another place
@@ -58,23 +58,150 @@ right? Since it is the most ”known” location from the place we can meet up. 
 personally give KNN another distinguishing meaning which is ”Know the Nearest Neighbor”
 Classification Algorithm. I think you’re thinking that it should be KtNN right? Yes, but
 hey what’s this, there’s a popping up animation of how it works.</article> <br>
+    <img src="/img/code_resource/4knn_model/map_locations.png" alt=""> <br>
     <article>
         <bold>K-Nearest Neighbor</bold> is a supervised machine learning algorithm that can be used to
 solve both classification and regression tasks. <bold>Classification? Regression?</bold> An example would
 you as a person, if you were to be classified, how would you be classified and related to that
 group?
+
+    <code> Figure 1: Plotting the coordinates of the parks according to the dataset</code>
     </article>
     <h2>Methodology / Process</h2>
     <article>
-        <bold>Finding the K-Nearest Neighbors</bold> <br>   
+        <img src="/img/code_resource/4knn_model/rem_best_girl.png" alt=""><bold>Finding the K-Nearest Neighbors</bold> 
 Thinking back about the process that landmarks are used in order to determine how close
 we are to a certain place, we need to measure it to create an accurate representation of how
 far each location is to each other.
-    </article> <br>
+    <code>
+        Figure 2: Model of our Current Location
+    </code><br></article>   
+    <h2>Distance Measurement</h2>
+    <h4>Euclidean Distance</h4>
     <article>
-        <code> Presenting the Code Layout Blocks</code>
+            Euclidean Distance is an algorithm that we can think of like a triangle ruler that we can
+            use in order to measure the distance between these two points. <br>
+            <math> Euclidean = sqrt((x2 − x1)^2 + (y2 − y1)^2) </math>
+            <bold>Euclidean Algorithm</bold> is commonly found in finding the greatest common divisor between
+            two given numbers which is enclosed by the parenthesis and squared as to why it is squared,
+            well as said earlier it is a triangular ruler where the rules of the Pythagorean Equation
+            matters in order to find the hypotenuse of the triangle which is the longest part of triangle
+            which has the formula:
+            <math>x2 + y2 = z2</math>
+            In our case it is used to represent the displacement which is the Nearest Shortcut to reach
+            that location. Another point to consider is why do we need to square root it, is there any
+            particular reason why? Square rooting the results will give us two width and height to
+            measure the triangle that we will be using as our ruler to measure the distance which is
+            shown below: (insert triangle diagram) </article>
+        <h4>Manhattan Distance</h4>
+        <article>    
+            Manhattan Distance measures the distance as the sum of the absolute differences between
+            the coordinates of the points. It is named after the grid-like layout of streets in Manhattan,
+            where the distance between two points is the sum of the absolute differences in their x and
+            y coordinates. (insert grid structures here)
+            <math>Manhattan = |x2 − x1| + |y2 − y1| </math>
     </article>
-    <script src="https://gist.github.com/DhominickJ/95962e5e5d779fb7923473cf7984b239.js"></script>
+    <h2>Implementation</h2>
+    <article><h4>Problem: How can we use this knowledge in order to solve real world problems?</h4>
+    <ul>1. Solve for the Location of the Parks that are near to each other.</ul>
+<ul>
+    2. Solve for the location of the user which is using the parks as the landmark in asking a
+    friend for directions.
+</ul>
+<ul> 3. Know where a friend is using the landmarks that he / she is currently seeing.</ul>
+<code>
+    4. Know the path to take when visiting all of the parks and representing the path that is
+    efficient and effective for fares to save money
+</code>
+<ul>
+    5. A much more endless possibilities for searching for a more applications especially in
+    location searching.
+
+</ul> <br>
+    There are a lot of possible implementation in knowing the nearest neighbor or the KNN
+Classification problems but the problem that we have focused in knowing is Knowing the
+path to take when visiting all of the parks and representing the path that is
+efficient and effective for fares to save money because we want to make most of our
+time and money.
+</article>
+    <h2>Code Implementation</h2>
+    <h4>Import the Packages to Represent the Data:</h4>
+<ul>
+    (a) <bold>Pandas</bold> <br>
+    Used in order to read the data which is a .csv file(comma-seperated values) to the
+    model
+</ul>
+<ul>
+    (b) <bold>Networkx</bold> <br>
+    Used to represent the relationship of the data points with the
+</ul>
+<ul>
+    (c) <bold>Matplotlib</bold> <br>
+    Used to show the representation made by the Networkx package
+</ul>
+<h4>Code Process</h4>
+    <ul>
+        1. First is to display the dataframe which is just a table of all the available data that shows everything we know about the data.
+    </ul>
+    <code>
+        <img src="/img/code_resource/4knn_model/loading_dataset.png" alt="">
+    </code>
+    <code>Figure 2: Loading the dataset to the model</code>
+    
+<ul>
+    2. Ask the user for his/her location to be used for calculating the Manhattan distance which
+    is explained how far we are from the park.
+</ul>
+<ul>
+    3. Grab the data from the table that we have loaded earlier and use the LATITUDE AND
+    LONGITUDE to calculate the Manhattan Distance to be passed to our function to process
+    and do it’s thing.
+</ul>
+<ul>
+    4. Use the BUBBLE Sort algorithm in order to sort out the algorithm from nearest to the
+    farthest away from the current location specified by the user.
+</ul> 
+    <code><img src="/img/code_resource/4knn_model/bubble_sort.gif" alt=""></code> <code>Figure 3: A simple bubble sort animation behind the scenes;
+    <br>Source: Aphinya Dechalert</code>
+    <article>
+    You might be wondering why
+    Bubble Sort? Simply, because it is simple to understand and implement. Bubble Sort works
+    by comparing the values in an set of values and change their position if the other is more
+    than the other in order to sort them out. This algorithm is still considered to be O(N 2)
+    which means that the time needed in order to sort through the distances increases linearly
+    as the data increases which is not as efficient as it is but for a smaller dataset like we have,
+    it’s all good.
+</article>
+<ul>
+    5. Next is we will present the result of our analytics to show the nearest park from our
+    coordinates using a Ranking System that our sorting algorithm provided for us.
+</ul>
+    <code><img src="/img/code_resource/4knn_model/printing_result.png" alt=""></code>
+    <code>Figure 4: Printing the top 3 parks nearest to our location</code>
+<ul>
+    6. Lastly, a graph or rather the map will be created as our guide in travelling through
+    the parks to reach the all of the parks while saving money on transportation with the use
+    Manhattan Distance and the Ranking System that we have created.
+</ul>
+    <code><img src="/img/code_resource/4knn_model/finished_ranked.png" alt=""><img src="/img/code_resource/4knn_model/final_map.png" alt=""></code>
+    <code>Figure 5: Showing the path to take if we travel to the nearest park to travel all parks</code>
+    <h2>Google Collab Implementation </h2>
+    <script src="https://gist.github.com/DhominickJ/523af0a7a11d23d52330b00d4d8455f7.js"></script>
+    <code>Hosted on Github Gist :)</code>
+    <h2>References</h2>
+    <ul>https://towardsdatascience.com/k-nearest-neighbors-knn-explained-cbc31849a7e3 </ul>
+ <ul>
+    •https://saturncloud.io/blog/algorithm-for-minimum-manhattan-distance-a-guide-for-data-
+    scientists/
+</ul>
+<ul>
+    • https://medium.com/analytics-vidhya/how-to-find-the-time-complexity-of-a-python-code-
+    95b0237e0f2d
+</ul>
+<ul>• data.world/botanical-garden-nyc</ul>
+<ul>• https://datagy.io/manhattan-distance-python/</ul> 
+<ul>• https://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-
+from-scratch</ul>
     </div>
     </body>
 </html>
