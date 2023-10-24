@@ -44,7 +44,7 @@
             </a>
         </div>
     <div class="main_body">
-        <h1>Representing Paths to Parks using K-Nearest Neighbor</h1>
+        <h1>Monitoring Objects of Nearest Instance to K-Specified Locations</h1>
         <h2> Billena, Artacho, Constantino, Torre - CriDhomElsJeph</h2>
         <h2> Introduction </h2>
         <article><i class='bx bxl-graphql bx-spin-hover' ></i>
@@ -63,8 +63,10 @@ hey what’s this, there’s a popping up animation of how it works.</article> <
         <bold>K-Nearest Neighbor</bold> is a supervised machine learning algorithm that can be used to
 solve both classification and regression tasks. <bold>Classification? Regression?</bold> An example would
 you as a person, if you were to be classified, how would you be classified and related to that
-group?
-
+group? <br> <br> <br>
+<h2>Project Pseudocode</h2>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9ZdIftrnzW7lkoA39balTx%2FKNN%252F-Euclidian-Algorithm-AI-246%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DhO7WJNcSxlc3gptV-1" allowfullscreen></iframe>
+    <code> Pseudocode - Cristopher Ian Artacho </code>   
     <code> Figure 1: Plotting the coordinates of the parks according to the dataset</code>
     </article>
     <h2>Methodology / Process</h2>
@@ -139,28 +141,34 @@ time and money.
     (c) <bold>Matplotlib</bold> <br>
     Used to show the representation made by the Networkx package
 </ul>
+    <script src="https://gist.github.com/DhominickJ/3ae2706dc25662dc71f8da637d1610db.js"></script>
 <h4>Code Process</h4>
     <ul>
         1. First is to display the dataframe which is just a table of all the available data that shows everything we know about the data.
     </ul>
-    <code>
-        <img src="/img/code_resource/4knn_model/loading_dataset.png" alt="">
-    </code>
+        <script src="https://gist.github.com/DhominickJ/d9e3b790a4d98398966ec98feb1fe493.js"></script>
     <code>Figure 2: Loading the dataset to the model</code> 
 <ul>
     2. Ask the user for his/her location to be used for calculating the Manhattan distance which
     is explained how far we are from the park.
 </ul>
+    <script src="https://gist.github.com/DhominickJ/07e8cf923a653a90515b022d01694e60.js"></script>
+    <code>Figure 3: Asking the User for the Current Coordinates</code>
 <ul>
     3. Grab the data from the table that we have loaded earlier and use the LATITUDE AND
     LONGITUDE to calculate the Manhattan Distance to be passed to our function to process
     and do it’s thing.
 </ul>
+
+<script src="https://gist.github.com/DhominickJ/369a8e4c0c787e50ddbf3f0a9d5fa0b3.js"></script>
+<script src="https://gist.github.com/DhominickJ/f5b9d925f6d87d98b014d2668a24798c.js"></script>
+<code>Figure 4: Processing the Euclidean Algorithm</code>
 <ul>
     4. Use the BUBBLE Sort algorithm in order to sort out the algorithm from nearest to the
     farthest away from the current location specified by the user.
 </ul> 
-    <code><img src="/img/code_resource/4knn_model/bubble_sort.gif" alt=""></code> <code>Figure 3: A simple bubble sort animation behind the scenes;
+    <script src="https://gist.github.com/DhominickJ/072c218e33b30b03aa269096dbd10489.js"></script><code>Figure 5: Sorting Algorithm</code>
+    <code><img src="/img/code_resource/4knn_model/bubble_sort.gif" alt=""></code> <code>Figure 6: A simple bubble sort animation behind the scenes;
     <br>Source: Aphinya Dechalert</code>
     <article>
     You might be wondering why
@@ -176,12 +184,13 @@ time and money.
     coordinates using a Ranking System that our sorting algorithm provided for us.
 </ul>
     <code><img src="/img/code_resource/4knn_model/printing_result.png" alt=""></code>
-    <code>Figure 4: Printing the top 3 parks nearest to our location</code>
+    <code>Figure 7: Printing the top 3 parks nearest to our location</code>
 <ul>
     6. Lastly, a graph or rather the map will be created as our guide in travelling through
     the parks to reach the all of the parks while saving money on transportation with the use
     Manhattan Distance and the Ranking System that we have created.
 </ul>
+<script src="https://gist.github.com/DhominickJ/82da5582955466c909db966466ed313b.js"></script><code>Figure 8: Result Presentation</code>
     <code><img src="/img/code_resource/4knn_model/finished_ranked.png" alt=""><img src="/img/code_resource/4knn_model/final_map.png" alt=""></code>
     <code>Figure 5: Showing the path to take if we travel to the nearest park to travel all parks</code>
     <h2>Google Collab Implementation </h2>
